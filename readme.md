@@ -1,12 +1,34 @@
 # Dockerized visual css tester
 
+Simply provide a full functionnal casperJS/phantomJS pre-configured to run visual-css-tester node projects
+
+## HOW TO BUILD : 
+```
+docker build <<image-name>> .
+```
+
+## HOW TO USE : 
+
+On your project directory (follow the project sample as example : [https://github.com/ssavajols/visual-css-tester]())
+
+```
+docker run --rm -i -v $(pwd):$(pwd) -w $(pwd) <<image-name>>
+```
+
+Also can be used with the built image form docker hub :
+
+```
+docker run --rm -i -v $(pwd):$(pwd) -w $(pwd) ssavajols/visuel-css-tester 
+```
+
+
 ## Applications :<br /> 
 phantomJS@1.8.2<br />
 casperJS@1.0.4<br />
 nodejs@0.10.25<br />
 npm@1.3.10<br />
 python@python<br />
-visual-css-tester@1.0.0
+visual-css-tester@1.0.0 // (Embedded for sample project only)
 
 ## CONTRIBUTES :
 

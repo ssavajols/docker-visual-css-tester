@@ -32,9 +32,9 @@ RUN npm install -g phantomjs@1.8.x
 
 
 ## Désinstaller les applications inutiles
-#RUN apt-get -y remove \
-#               git \
-#               npm
+RUN apt-get -y remove \
+               git \
+               npm
 
 CMD ["nodejs", "app.js"]
 #CMD ["/bin/bash"]
