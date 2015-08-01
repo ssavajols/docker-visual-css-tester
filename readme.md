@@ -9,7 +9,7 @@ docker build <<image-name>> .
 
 ## HOW TO USE : 
 
-On your project directory (follow the project sample as example : [https://github.com/ssavajols/visual-css-tester]())
+On your project directory (follow the project sample as example : [https://github.com/ssavajols/visual-css-tester](https://github.com/ssavajols/visual-css-tester))
 
 ```
 docker run --rm -i -v $(pwd):$(pwd) -w $(pwd) <<image-name>>
