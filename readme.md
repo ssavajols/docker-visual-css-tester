@@ -18,7 +18,7 @@ docker run --rm -i -v $(pwd):$(pwd) -w $(pwd) <<image-name>>
 Also can be used with the built image form docker hub :
 
 ```
-docker run --rm -i -v $(pwd):$(pwd) -w $(pwd) ssavajols/visuel-css-tester 
+docker run --rm -i -v $(pwd):$(pwd) -w $(pwd) ssavajols/visual-css-tester 
 ```
 
 
