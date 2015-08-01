@@ -27,7 +27,7 @@ phantomJS@1.8.2<br />
 casperJS@1.0.4<br />
 nodejs@0.10.25<br />
 npm@1.3.10<br />
-python@python<br />
+python@2.7.5<br />
 visual-css-tester@1.0.0 // (Embedded for sample project only)
 
 ## CONTRIBUTES :
