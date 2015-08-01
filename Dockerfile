@@ -1,5 +1,6 @@
 
 FROM ubuntu:latest
+MAINTAINER Sylvain Savajols <s.savajols@gmail.com>
 
 ENV AP /home/visual-css-tester
 ENV PHANTOM_DIR /home/phantomjs
@@ -22,12 +23,12 @@ RUN git clone --branch 1.0.4 git://github.com/n1k0/casperjs.git /opt/casperjs
 RUN ln -sf /opt/casperjs/bin/casperjs /usr/bin/
 
 ## Installation sample visual css tester project
-RUN git clone https://github.com/ssavajols/visual-css-tester.git $AP
+RUN git clone --branch 1.0.1 https://github.com/ssavajols/visual-css-tester.git $AP
 
 WORKDIR $AP/
 
 ## Install node modules
-RUN npm install visual-css-tester@1.0.0
+RUN npm install visual-css-tester@1.0.1
 RUN npm install -g phantomjs@1.8.x
 
 
