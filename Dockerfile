@@ -28,7 +28,7 @@ RUN git clone --branch 1.0.1 https://github.com/ssavajols/visual-css-tester.git 
 WORKDIR $AP/
 
 ## Install node modules
-RUN npm install visual-css-tester@1.0.1
+RUN npm install
 RUN npm install -g phantomjs@1.8.x
 
 
