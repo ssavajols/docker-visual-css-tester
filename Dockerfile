@@ -23,7 +23,7 @@ RUN git clone --branch 1.0.4 git://github.com/n1k0/casperjs.git /opt/casperjs
 RUN ln -sf /opt/casperjs/bin/casperjs /usr/bin/
 
 ## Installation sample visual css tester project
-RUN git clone --branch 1.0.1 https://github.com/ssavajols/visual-css-tester.git $AP
+RUN git clone --branch 1.0.2 https://github.com/ssavajols/visual-css-tester.git $AP
 
 WORKDIR $AP/
 
@@ -31,6 +31,13 @@ WORKDIR $AP/
 RUN npm install
 RUN npm install -g phantomjs@1.8.x
 
+## copy node module to root path.
+## This node module could be overrided by app
+## if got his own visual-css-tester module
+## installed on the app folder.
+## Node recursively loop until the root dir to find
+## node_modules packages
+RUN cp -rf ./node_modules /node_modules
 
 ## Désinstaller les applications inutiles
 RUN apt-get -y remove \

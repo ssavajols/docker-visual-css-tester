@@ -19,6 +19,7 @@ Also can be used with the built image form docker hub :
 
 ```
 docker run --rm -i -v $(pwd):$(pwd) -w $(pwd) ssavajols/visual-css-tester 
+docker run --rm -i -v $(pwd):$(pwd) -w $(pwd) ssavajols/visual-css-tester node tester-file.js
 ```
 
 
@@ -28,7 +29,7 @@ casperJS@1.0.4<br />
 nodejs@0.10.25<br />
 npm@1.3.10<br />
 python@2.7.5<br />
-visual-css-tester@1.0.0 // (Embedded for sample project only)
+visual-css-tester@1.0.3 // could be overrided by node module app
 
 ## CONTRIBUTES :
 
